@@ -156,9 +156,33 @@
             color: #30aa85;
             background-color: #fff;
         }
+
+        .item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #0b4886f2;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
         
     </style>
-</head>
+ </head>
 <body> 
 
     <header class="main-header">
@@ -187,6 +211,16 @@
                 <h2>Who are we?</h2>
                 <p>Let's Start!</p>
             </div>
+
+            <div class="grid-container">
+                <div class="item1">Leader</div>
+                <div class="item2">Pic of Mua</div>
+                <div class="item3">Mua</div>  
+                <div class="item4">surname</div>
+                <div class="item5"><p>Mua was born in USA. He has finished highschool in there and after graduating he came to Baku
+                </p>
+                </div>
+              </div>
 
             <div class="row">
                 <div class="icon-box col-3">                   
