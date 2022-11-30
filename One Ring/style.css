@@ -243,7 +243,7 @@ transition-duration: 0.3s;
 .hourofcode{
     width: 600px;
     height: auto;
-    margin: 0 auto 0 auto;
+    margin: -30px auto 0 auto;
     font: bold 70px arial;
     text-align: center;
 }
@@ -384,7 +384,7 @@ th, td {
 
 
   table{
-    transform: scale(1.7);
+    transform: scale(1);
     margin: 150px auto 0 auto;
   }
 
